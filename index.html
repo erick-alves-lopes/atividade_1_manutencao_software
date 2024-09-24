@@ -6,7 +6,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wood & Strings</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            background: url('https://m.media-amazon.com/images/I/817Q3VCabwL.jpg');
+            margin: 0;
+            padding: 0;
+            font-family: "Gill Sans", sans-serif;
+            color: white;
+        }
+
+        #div-cor {
+            background: rgba(217, 155, 133, 0.8);
+        }
+
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 1);
+        }
+
+        #logo {
+            height: 300px;
+            width: 300px;
+        }
+
+        #div-centralizar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 1);
+        }
+
+        #div-nome_slogan {
+            margin-right: 5%;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        #div-boca {
+            height: 380px;
+            width: 380px;
+            border: double 25px rgb(217, 155, 133);
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+
+        .div-nav_cordas {
+            width: 400px;
+            border-radius: 10px;
+            border-bottom: solid 3px rgb(64, 64, 64);
+            display: flex;
+            justify-content: center;
+            background: rgb(96, 96, 96);
+            background: radial-gradient(circle, rgba(96, 96, 96, 1) 0%, rgba(126, 126, 126, 1) 100%);
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .div-nav_cordas:hover {
+            cursor: pointer;
+            background: rgb(130, 130, 130);
+            background: radial-gradient(circle, rgba(130, 130, 130, 1) 0%, rgba(126, 126, 126, 1) 100%);
+        }
+
+        nav {
+            width: 100%;
+            background: black;
+        }
+
+        #div-logo_marcas {
+            margin: 1% 5%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            background: black;
+        }
+
+        .marcas:hover {
+            cursor: pointer;
+        }
+
+        #div-coluna {
+            box-sizing: border-box;
+            display: flex;
+            margin: 0% 20%;
+            margin-top: 1%;
+            border-radius: 15px;
+            padding: 15px;
+            background: black;
+        }
+
+        #div-coluna h1 {
+            text-align: center;
+        }
+
+        #div-produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .div-img_produtos {
+            border-radius: 5px;
+            padding: 5px;
+            background: white;
+        }
+
+        .produto {
+            width: 300px;
+            border: double 15px rgb(217, 155, 133);
+            border-radius: 15px;
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 1rem;
+            background: black;
+            color: white;
+        }
+
+        .produto button {
+            background: white;
+            border-color: white;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+
+        .produto button:hover {
+            border-color: rgb(217, 155, 133);
+            background: black;
+            color: rgb(217, 155, 133);
+        }
+
+        footer {
+            height: 30px;
+            text-align: center;
+            font-size: 1.3rem;
+            background: rgba(0, 0, 0, 1);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            #div-centralizar {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            #div-nome_slogan {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            #div-boca {
+                height: 280px;
+                width: 280px;
+            }
+
+            .div-nav_cordas {
+                width: 300px;
+                font-size: 0.9rem;
+            }
+
+            #logo {
+                height: 200px;
+                width: 200px;
+            }
+
+            #div-logo_marcas {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .logomarcas {
+                width: 100px;
+                height: auto;
+                margin: 5px;
+            }
+
+            #div-coluna {
+                margin: 0 10%;
+                margin-top: 1%;
+            }
+
+            .produto {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #div-boca {
+                height: 200px;
+                width: 200px;
+                border-width: 15px;
+            }
+
+            .div-nav_cordas {
+                width: 200px;
+                font-size: 0.8rem;
+            }
+
+            #logo {
+                height: 150px;
+                width: 150px;
+            }
+
+            .logomarcas {
+                width: 80px;
+            }
+
+            #div-coluna {
+                margin: 0 5%;
+                margin-top: 1%;
+            }
+
+            .produto {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
